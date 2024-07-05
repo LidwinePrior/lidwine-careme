@@ -1,0 +1,21 @@
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        color: #fa7a78;
+        transform: translateY(-5px);
+    }
+}

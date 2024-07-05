@@ -1,0 +1,23 @@
+    nav,
+    .reseaux {
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: #fa757b;
+            }
+        }
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .reseaux {
+        justify-content: space-around;
+    }

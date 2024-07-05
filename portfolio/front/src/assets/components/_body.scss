@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+}
+
+.home-page {
+
+    header {
+        height: 15vh;
+    }
+
+    main {
+        .presentation-section {
+            height: 85vh;
+        }
+
+        .projects-section {
+            height: 100vh;
+        }
+
+        .about-section {
+            height: 100vh;
+        }
+
+        .contact-form {
+            height: 85vh;
+        }
+    }
+
+    footer {
+        height: 15vh;
+    }
+}

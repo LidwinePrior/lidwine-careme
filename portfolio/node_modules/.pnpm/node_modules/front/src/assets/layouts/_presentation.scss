@@ -1,0 +1,61 @@
+.presentation-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+    }
+
+    .grid-presentation {
+        width: 80%;
+        height: 500px;
+        display: grid;
+        grid-template-areas:
+            "h2 ordi"
+            "button ordi";
+
+
+
+        .div-subtitle {
+            grid-area: h2;
+            align-self: center;
+            margin-left: 150px;
+            z-index: 4;
+
+            h2 {
+                width: 300px;
+            }
+        }
+
+        .image-ordi {
+            grid-area: ordi;
+            position: absolute;
+            top: 90px;
+            right: 150px;
+            z-index: 1;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+                object-fit: cover;
+            }
+        }
+
+        .presentation-div-button {
+            grid-area: button;
+            align-self: end;
+            margin-left: 150px;
+            z-index: 3;
+
+            button {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

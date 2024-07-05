@@ -1,0 +1,52 @@
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .modal-content {
+        background-color: white;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 5px 5px #fa7a7894;
+        border-radius: 10px;
+        height: 500px;
+        width: 500px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+
+        .close {
+            color: #fa7a786a;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: right;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            &:hover,
+            &:focus {
+                color: #fa7a78;
+                text-decoration: none;
+            }
+        }
+
+        .succes-failed-text {
+            text-align: center;
+            width: 80%;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.language-buttons {
+
+    button {
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        border: 1px solid white;
+        transition: box-shadow 0.2s ease;
+
+        &:hover {
+            border: 1px solid #d76c86;
+        }
+
+        &:active {
+            box-shadow: inset 3px 3px 5px #d76c86;
+            transform: scale(0.95);
+        }
+
+    }
+}
+
+.presentation-div-button {
+    width: 260px;
+    height: 60px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.2s ease;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover {
+        border: 1px solid #fa7a78;
+
+    }
+
+    &:active {
+        box-shadow: inset 3px 3px 5px #d76c86;
+        transform: scale(0.95);
+    }
+}
+
+.contact-form {
+    button {
+        width: 260px;
+        height: 60px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        border: 1px solid white;
+        transition: box-shadow 0.2s ease;
+
+        &:hover {
+            border: 1px solid #fa7a78;
+
+        }
+
+        &:active {
+            box-shadow: inset 3px 3px 5px #d76c86;
+            transform: scale(0.95);
+        }
+    }
+}

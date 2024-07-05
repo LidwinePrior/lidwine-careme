@@ -1,0 +1,536 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..1000&display=swap");
+* {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+h1 {
+  font-weight: 1000;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
+}
+
+button,
+a {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 64px;
+  letter-spacing: 8px;
+}
+
+h2 {
+  font-size: 32px;
+  letter-spacing: 8px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+a {
+  font-size: 25px;
+  letter-spacing: 8px;
+}
+
+p,
+input,
+textarea {
+  font-size: 25px;
+  letter-spacing: 8px;
+}
+
+.presentation-div-button button,
+.contact-form button {
+  font-size: 25px;
+  letter-spacing: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #ffffff;
+  background-color: #000000;
+  width: 100%;
+}
+
+.home-page header {
+  height: 15vh;
+}
+.home-page main .presentation-section {
+  height: 85vh;
+}
+.home-page main .projects-section {
+  height: 100vh;
+}
+.home-page main .about-section {
+  height: 100vh;
+}
+.home-page main .contact-form {
+  height: 85vh;
+}
+.home-page footer {
+  height: 15vh;
+}
+
+.language-buttons button {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: box-shadow 0.2s ease;
+}
+.language-buttons button:hover {
+  border: 1px solid #d76c86;
+}
+.language-buttons button:active {
+  box-shadow: inset 3px 3px 5px #d76c86;
+  transform: scale(0.95);
+}
+
+.presentation-div-button {
+  width: 260px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+}
+.presentation-div-button a {
+  text-decoration: none;
+  color: white;
+}
+.presentation-div-button:hover {
+  border: 1px solid #fa7a78;
+}
+.presentation-div-button:active {
+  box-shadow: inset 3px 3px 5px #d76c86;
+  transform: scale(0.95);
+}
+
+.contact-form button {
+  width: 260px;
+  height: 60px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: box-shadow 0.2s ease;
+}
+.contact-form button:hover {
+  border: 1px solid #fa7a78;
+}
+.contact-form button:active {
+  box-shadow: inset 3px 3px 5px #d76c86;
+  transform: scale(0.95);
+}
+
+.logo img {
+  height: 150px;
+  width: 150px;
+}
+
+nav,
+.reseaux {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+nav a,
+.reseaux a {
+  text-decoration: none;
+  color: white;
+}
+nav a:hover,
+.reseaux a:hover {
+  color: #fa757b;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+.reseaux {
+  justify-content: space-around;
+}
+
+.image-ordi img {
+  width: 1000px;
+  height: 1000px;
+}
+
+.image-me img {
+  width: 400px;
+  height: auto;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .modal-content {
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 5px 5px rgba(250, 122, 120, 0.5803921569);
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.modal .modal-content .close {
+  color: rgba(250, 122, 120, 0.4156862745);
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modal .modal-content .close:hover, .modal .modal-content .close:focus {
+  color: #fa7a78;
+  text-decoration: none;
+}
+.modal .modal-content .succes-failed-text {
+  text-align: center;
+  width: 80%;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.back-to-top:hover {
+  color: #fa7a78;
+  transform: translateY(-5px);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  text-transform: uppercase;
+}
+header .language-buttons {
+  margin-right: 15px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.presentation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.presentation-section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+.presentation-section .grid-presentation {
+  width: 80%;
+  height: 500px;
+  display: grid;
+  grid-template-areas: "h2 ordi" "button ordi";
+}
+.presentation-section .grid-presentation .div-subtitle {
+  grid-area: h2;
+  align-self: center;
+  margin-left: 150px;
+  z-index: 4;
+}
+.presentation-section .grid-presentation .div-subtitle h2 {
+  width: 300px;
+}
+.presentation-section .grid-presentation .image-ordi {
+  grid-area: ordi;
+  position: absolute;
+  top: 90px;
+  right: 150px;
+  z-index: 1;
+}
+.presentation-section .grid-presentation .image-ordi img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.presentation-section .grid-presentation .presentation-div-button {
+  grid-area: button;
+  align-self: end;
+  margin-left: 150px;
+  z-index: 3;
+}
+.presentation-section .grid-presentation .presentation-div-button button {
+  text-transform: uppercase;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects-section h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-left: 250px;
+}
+.projects-section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 5%;
+  border-bottom: 4px solid white;
+}
+.projects-section .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.projects-section .projects .project-card {
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects-section .projects .project-card:hover .overlay {
+  display: flex;
+  opacity: 1;
+}
+.projects-section .projects .project-card:hover img {
+  filter: brightness(50%);
+}
+.projects-section .projects .project-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.projects-section .projects .project-card a img {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.3s ease;
+}
+
+.about-section h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+.about-section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 50%;
+  border-bottom: 4px solid white;
+}
+.about-section .about-content {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8% auto;
+}
+.about-section .about-content .about-paragraphs {
+  flex: 1;
+  min-width: 300px;
+}
+.about-section .about-content .about-paragraphs p {
+  margin-bottom: 30px;
+}
+.about-section .about-content .about-paragraphs a {
+  text-decoration: none;
+  color: #fa7a78;
+}
+.about-section .about-content .about-paragraphs a:hover {
+  text-shadow: 3px 3px white;
+}
+.about-section .about-content .image-me img {
+  margin-left: 30px;
+  flex-shrink: 0;
+  max-width: 400px;
+}
+
+.contact-form h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+.contact-form h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 50%;
+  border-bottom: 4px solid white;
+}
+.contact-form form {
+  background: rgba(255, 255, 255, 0.137);
+  width: 60%;
+  height: 550px;
+  margin: 6% auto;
+  border-radius: 50px 0;
+  display: grid;
+  grid-template-areas: "nom prénom" "email gsm" "message message" "button button";
+}
+.contact-form form input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.contact-form form input::-moz-placeholder {
+  color: white;
+}
+.contact-form form input::placeholder {
+  color: white;
+}
+.contact-form form input:focus {
+  outline: none;
+  border-bottom: 2px solid #fa7a78;
+}
+.contact-form form textarea {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 10px 0;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  width: 900px;
+  height: 200px;
+}
+.contact-form form textarea::-moz-placeholder {
+  color: white;
+}
+.contact-form form textarea::placeholder {
+  color: white;
+}
+.contact-form form textarea:focus {
+  outline: none;
+  border: 2px solid #fa7a78;
+}
+.contact-form form .div-contact-name {
+  text-align: center;
+  align-self: center;
+  grid-area: nom;
+}
+.contact-form form .div-contact-firstname {
+  text-align: center;
+  align-self: center;
+  grid-area: prénom;
+}
+.contact-form form .div-contact-email {
+  text-align: center;
+  align-self: center;
+  grid-area: email;
+}
+.contact-form form .div-contact-phone {
+  text-align: center;
+  align-self: center;
+  grid-area: gsm;
+}
+.contact-form form .div-contact-message {
+  text-align: center;
+  align-self: center;
+  grid-area: message;
+}
+.contact-form form button {
+  align-self: center;
+  justify-self: center;
+  grid-area: button;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .logo {
+  position: absolute;
+}
+footer .reseaux {
+  width: 100%;
+}
+footer .reseaux .social-links {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .reseaux .social-links a {
+  font-size: 50px;
+}/*# sourceMappingURL=style.css.map */

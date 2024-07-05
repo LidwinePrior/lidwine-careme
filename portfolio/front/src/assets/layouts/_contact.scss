@@ -1,0 +1,111 @@
+.contact-form {
+    h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1em;
+        margin-left: 250px;
+        margin-top: 100px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            width: 50%;
+            border-bottom: 4px solid white;
+        }
+    }
+
+    form {
+        background: rgba(255, 255, 255, 0.137);
+        width: 60%;
+        height: 550px;
+        margin: 6% auto;
+        border-radius: 50px 0;
+        display: grid;
+        grid-template-areas:
+            "nom prénom"
+            "email gsm"
+            "message message"
+            "button button";
+
+        input {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+
+            &::placeholder {
+                color: white;
+            }
+
+            &:focus {
+                outline: none;
+                border-bottom: 2px solid #fa7a78;
+
+            }
+
+        }
+
+        textarea {
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 10px 0;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+            width: 900px;
+            height: 200px;
+
+            &::placeholder {
+                color: white;
+            }
+
+            &:focus {
+                outline: none;
+                border: 2px solid #fa7a78;
+
+            }
+        }
+
+        .div-contact-name {
+            text-align: center;
+            align-self: center;
+            grid-area: nom;
+        }
+
+        .div-contact-firstname {
+            text-align: center;
+            align-self: center;
+            grid-area: prénom;
+        }
+
+        .div-contact-email {
+            text-align: center;
+            align-self: center;
+            grid-area: email;
+        }
+
+        .div-contact-phone {
+            text-align: center;
+            align-self: center;
+            grid-area: gsm;
+        }
+
+        .div-contact-message {
+            text-align: center;
+            align-self: center;
+            grid-area: message;
+        }
+
+        button {
+            align-self: center;
+            justify-self: center;
+            grid-area: button;
+        }
+    }
+}
