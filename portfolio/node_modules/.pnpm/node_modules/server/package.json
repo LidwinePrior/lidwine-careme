@@ -19,8 +19,7 @@
     "express": "^4.19.2",
     "express-validator": "^7.1.0",
     "mongoose": "^8.4.3",
-    "nodemailer": "^6.9.14",
-    "merge-descriptors": "^1.0.1"
+    "nodemailer": "^6.9.14"
   },
   "devDependencies": {
     "nodemon": "^3.1.3"
