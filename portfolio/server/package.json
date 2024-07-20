@@ -20,7 +20,12 @@
     "express-validator": "^7.1.0",
     "mongoose": "^8.4.3",
     "nodemailer": "^6.9.14",
-    "merge-descriptors": "^1.0.1"
+    "merge-descriptors": "^1.0.1",
+    "finalhandler": "^1.2.0",
+    "morgan": "^1.10.0",
+    "cookie-parser": "^1.4.6",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.3",
