@@ -1,8 +1,8 @@
+# .render.yaml
 services:
   - type: web
     name: server
     env: node
     buildCommand: pnpm install
     startCommand: pnpm start
-    # Assure-toi de spécifier le bon répertoire racine
     rootDirectory: portfolio/server
