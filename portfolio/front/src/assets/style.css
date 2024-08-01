@@ -254,20 +254,6 @@ body {
     height: auto;
   }
 }
-nav {
-  width: 900px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-nav a {
-  text-decoration: none;
-  color: white;
-}
-nav a:hover {
-  color: #fa757b;
-}
-
 .image-ordi img {
   width: 100%;
   height: auto;
@@ -284,7 +270,7 @@ nav a:hover {
     height: 800px;
   }
   .image-me img {
-    width: 300px;
+    width: 200px;
     height: auto;
   }
 }
@@ -294,7 +280,7 @@ nav a:hover {
     height: 1000px;
   }
   .image-me img {
-    width: 400px;
+    width: 350px;
     height: auto;
   }
 }
@@ -403,18 +389,65 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-header a {
-  text-transform: uppercase;
+  padding: 10px 20px;
+  position: relative;
 }
 header .language-buttons {
-  margin-right: 15px;
-  width: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 10px;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  position: relative;
+}
+header nav .nav-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 60px;
+}
+header nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+}
+header nav .nav-links a:hover {
+  color: #fa757b;
+}
+header nav .menu-toggle {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  margin: 10px 0;
+}
+header nav.open .nav-links {
+  display: flex;
 }
 
+@media (min-width: 992px) {
+  header nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    justify-content: space-between;
+  }
+  header nav .nav-links a {
+    margin: 0 15px;
+  }
+  header nav .menu-toggle {
+    display: none;
+  }
+}
 header {
   position: relative;
   z-index: 100;
@@ -451,7 +484,7 @@ header {
   grid-area: ordi;
   position: absolute;
   top: 90px;
-  right: 150px;
+  right: 5px;
   z-index: 1;
 }
 .presentation-section .grid-presentation .image-ordi img {
@@ -464,7 +497,6 @@ header {
 .presentation-section .grid-presentation .presentation-div-button {
   grid-area: button;
   align-self: end;
-  margin-left: 150px;
   z-index: 3;
 }
 .presentation-section .grid-presentation .presentation-div-button button {
@@ -476,6 +508,26 @@ header {
   z-index: 100;
 }
 
+@media (min-width: 992px) {
+  .presentation-section .grid-presentation .div-subtitle {
+    margin-left: 150px;
+  }
+  .presentation-section .grid-presentation .div-subtitle h2 {
+    width: 300px;
+  }
+  .presentation-section .grid-presentation .image-ordi {
+    top: 90px;
+    right: 150px;
+  }
+  .presentation-section .grid-presentation .presentation-div-button {
+    align-self: end;
+    margin-left: 150px;
+    z-index: 3;
+  }
+  .presentation-section .grid-presentation .presentation-div-button button {
+    text-transform: uppercase;
+  }
+}
 .projects-section {
   display: flex;
   flex-direction: column;

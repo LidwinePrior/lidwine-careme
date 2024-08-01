@@ -1,18 +1,84 @@
+// components/Header.scss
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    a {
-        text-transform: uppercase;
-    }
+    padding: 10px 20px;
+    position: relative;
 
     .language-buttons {
-        margin-right: 15px;
-        width: 100px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        gap: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        position: relative;
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color: #000;
+            position: absolute;
+            top: 60px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                display: block;
+                padding: 10px;
+
+                &:hover {
+                    color: #fa757b;
+                }
+            }
+        }
+
+        .menu-toggle {
+            display: block;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+            margin: 10px 0;
+        }
+
+        // Style pour le menu ouvert
+        &.open .nav-links {
+            display: flex;
+        }
+    }
+}
+
+
+
+// Styles pour les écrans de bureau (992px et plus)
+@media (min-width: 992px) {
+    header {
+        nav {
+
+            .nav-links {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                justify-content: space-between;
+
+                a {
+                    margin: 0 15px;
+                }
+            }
+
+            .menu-toggle {
+                display: none;
+            }
+        }
     }
 }
