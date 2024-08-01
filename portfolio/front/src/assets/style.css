@@ -416,7 +416,6 @@ header nav .nav-links {
 header nav .nav-links a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
   display: block;
   padding: 10px;
 }
@@ -474,7 +473,6 @@ header {
 .presentation-section .grid-presentation .div-subtitle {
   grid-area: h2;
   align-self: center;
-  margin-left: 150px;
   z-index: 4;
 }
 .presentation-section .grid-presentation .div-subtitle h2 {
