@@ -22,22 +22,22 @@ const Contact = ({ language }) => {
     useEffect(() => {
         const fetchTexts = async () => {
             try {
-                const response1 = await axios.get(`http://localhost:3000/api/texts/contact-name/${language}`);
+                const response1 = await axios.get(`https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/texts/contact-name/${language}`);
                 setContactNamePlaceholder(response1.data.content);
 
-                const response2 = await axios.get(`http://localhost:3000/api/texts/contact-firstname/${language}`);
+                const response2 = await axios.get(`https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/texts/contact-firstname/${language}`);
                 setContactFirstnamePlaceholder(response2.data.content);
 
-                const response3 = await axios.get(`http://localhost:3000/api/texts/contact-email/${language}`);
+                const response3 = await axios.get(`https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/texts/contact-email/${language}`);
                 setContactEmailPlaceholder(response3.data.content);
 
-                const response4 = await axios.get(`http://localhost:3000/api/texts/contact-phone/${language}`);
+                const response4 = await axios.get(`https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/texts/contact-phone/${language}`);
                 setContactPhonePlaceholder(response4.data.content);
 
-                const response5 = await axios.get(`http://localhost:3000/api/texts/contact-message/${language}`);
+                const response5 = await axios.get(`https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/texts/contact-message/${language}`);
                 setContactMessagePlaceholder(response5.data.content);
 
-                const response6 = await axios.get(`http://localhost:3000/api/texts/button-send/${language}`);
+                const response6 = await axios.get(`https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/texts/button-send/${language}`);
                 setButtonSendText(response6.data.content);
             } catch (error) {
                 console.error('Error fetching texts:', error);
@@ -61,7 +61,7 @@ const Contact = ({ language }) => {
         setSuccessMessage('');
 
         try {
-            const response = await axios.post('http://localhost:3000/api/contact', formData);
+            const response = await axios.post('https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/contact', formData);
             setSuccessMessage(response.data.message);
             setFormData({ name: '', firstname: '', email: '', phone: '', message: '' });
             setShowModal(true); // Afficher le modal en cas de succès

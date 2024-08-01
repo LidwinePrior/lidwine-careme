@@ -10,7 +10,7 @@ const Portfolio = ({ language }) => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/projects');
+                const response = await axios.get('https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/projects');
                 setProjects(response.data);
             } catch (error) {
                 console.error('Error fetching projects:', error);

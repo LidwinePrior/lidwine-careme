@@ -8,7 +8,7 @@ const DynamicProject = ({ projectId, language }) => {
     useEffect(() => {
         const fetchProjectDetails = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/project/${projectId}`);
+                const response = await axios.get(`https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/project/${projectId}`);
                 setProject(response.data);
             } catch (error) {
                 console.error('Error fetching project details:', error);

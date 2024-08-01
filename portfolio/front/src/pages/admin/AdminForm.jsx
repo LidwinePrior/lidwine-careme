@@ -19,7 +19,7 @@ const AdminForm = () => {
     const handleTextSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/api/text', {
+            const response = await axios.post('https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/text', {
                 textClass: textclass,
                 language: textLanguage,
                 content: textContent,
@@ -39,7 +39,7 @@ const AdminForm = () => {
     const handleProjectSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/api/project', {
+            const response = await axios.post('https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/project', {
                 title: projectTitle,
                 descriptions: [
                     {
@@ -71,7 +71,7 @@ const AdminForm = () => {
     const handlePhotoSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/api/photo', {
+            const response = await axios.post('https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/photo', {
                 title: photoTitle,
                 url: photoUrl,
                 description: photoDescription,

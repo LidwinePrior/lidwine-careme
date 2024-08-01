@@ -7,7 +7,7 @@ const DynamicText = ({ textclass, language }) => {
     useEffect(() => {
         const fetchTextData = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/texts/${textclass}/${language}`);
+                const response = await axios.get(`https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/texts/${textclass}/${language}`);
                 setTextData(response.data);
             } catch (error) {
                 console.error('Error fetching text:', error);

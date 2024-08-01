@@ -9,7 +9,7 @@ const About = ({ language }) => {
     useEffect(() => {
         const fetchPhotos = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/photos');
+                const response = await axios.get('https://fast-beyond-92188-6197aa3c7d6f.herokuapp.com/api/photos');
                 setPhotos(response.data);
             } catch (error) {
                 console.error('Error fetching photos:', error);
