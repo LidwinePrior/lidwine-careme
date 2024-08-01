@@ -1,8 +1,8 @@
 [build]
   base = "portfolio/front"
   command = "pnpm run build"
- publish = "portfolio/front/dist"
- 
+  publish = "dist"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
