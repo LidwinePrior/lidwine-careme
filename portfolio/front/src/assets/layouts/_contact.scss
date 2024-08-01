@@ -18,12 +18,12 @@
 
     form {
         background: rgba(255, 255, 255, 0.137);
-        width: 80%; // Réduit la largeur pour mobile
-        max-width: 900px; // Largeur maximale pour bureau
+        width: 80%;
+        max-width: 900px;
         margin: 6% auto;
         border-radius: 50px 0;
         display: grid;
-        grid-template-columns: 1fr; // Une seule colonne par défaut
+        grid-template-columns: 1fr;
         grid-template-areas:
             "nom"
             "prénom"
@@ -31,8 +31,8 @@
             "gsm"
             "message"
             "button";
-        gap: 10px; // Ajout d'espace entre les champs
-        padding: 20px; // Ajout de padding pour mobile
+        gap: 10px;
+        padding: 20px;
 
         input {
             background: transparent;
@@ -42,7 +42,7 @@
             margin-bottom: 20px;
             box-sizing: border-box;
             transition: border-color 0.3s ease;
-            width: 100%; // Pleine largeur
+            width: 100%;
 
             &::placeholder {
                 color: white;
@@ -62,7 +62,7 @@
             margin-bottom: 20px;
             box-sizing: border-box;
             transition: border-color 0.3s ease;
-            width: 100%; // Pleine largeur
+            width: 100%;
             height: 200px;
 
             &::placeholder {
@@ -117,7 +117,7 @@
 @media (min-width: 768px) {
     .contact-form {
         form {
-            grid-template-columns: 1fr 1fr; // Deux colonnes sur tablette
+            grid-template-columns: 1fr 1fr;
             grid-template-areas:
                 "nom prénom"
                 "email gsm"
@@ -133,7 +133,7 @@
         h2 {
             position: relative;
             display: inline-block;
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
             margin-left: 250px;
             margin-top: 100px;
 
@@ -148,8 +148,8 @@
         }
 
         form {
-            width: 60%; // Réduit la largeur pour bureau
-            grid-template-columns: 1fr 1fr; // Deux colonnes sur bureau
+            width: 60%;
+            grid-template-columns: 1fr 1fr;
             grid-template-areas:
                 "nom prénom"
                 "email gsm"
