@@ -20,7 +20,7 @@ footer {
             justify-content: space-between;
 
             a {
-                font-size: 50px;
+                font-size: 30px;
                 text-decoration: none;
                 color: white;
 
@@ -37,6 +37,10 @@ footer {
         .reseaux {
             .social-links {
                 width: 500px;
+
+                a {
+                    font-size: 50px;
+                }
             }
         }
     }

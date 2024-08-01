@@ -2,10 +2,10 @@
 .back-to-top {
     display: none;
     position: fixed;
-    bottom: 15px;
+    bottom: 40px;
     right: 15px;
     z-index: 100;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
     color: white;
     padding: 8px;
@@ -23,7 +23,7 @@
 // Media queries pour les tablettes
 @media (min-width: 768px) {
     .back-to-top {
-        font-size: 30px;
+        font-size: 40px;
         bottom: 20px;
         right: 20px;
         padding: 10px;
@@ -33,7 +33,7 @@
 // Media queries pour les écrans de bureau
 @media (min-width: 992px) {
     .back-to-top {
-        font-size: 36px;
+        font-size: 45px;
         bottom: 20px;
         right: 20px;
         padding: 12px;
