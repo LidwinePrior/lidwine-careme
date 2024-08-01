@@ -3,8 +3,8 @@
         position: relative;
         display: inline-block;
         margin-bottom: 1em;
-        margin-left: 250px;
-        margin-top: 100px;
+        margin-top: 4em;
+        margin-left: 50px;
 
         &::after {
             content: "";
@@ -18,16 +18,21 @@
 
     form {
         background: rgba(255, 255, 255, 0.137);
-        width: 60%;
-        height: 550px;
+        width: 80%; // Réduit la largeur pour mobile
+        max-width: 900px; // Largeur maximale pour bureau
         margin: 6% auto;
         border-radius: 50px 0;
         display: grid;
+        grid-template-columns: 1fr; // Une seule colonne par défaut
         grid-template-areas:
-            "nom prénom"
-            "email gsm"
-            "message message"
-            "button button";
+            "nom"
+            "prénom"
+            "email"
+            "gsm"
+            "message"
+            "button";
+        gap: 10px; // Ajout d'espace entre les champs
+        padding: 20px; // Ajout de padding pour mobile
 
         input {
             background: transparent;
@@ -37,6 +42,7 @@
             margin-bottom: 20px;
             box-sizing: border-box;
             transition: border-color 0.3s ease;
+            width: 100%; // Pleine largeur
 
             &::placeholder {
                 color: white;
@@ -45,9 +51,7 @@
             &:focus {
                 outline: none;
                 border-bottom: 2px solid #fa7a78;
-
             }
-
         }
 
         textarea {
@@ -58,7 +62,7 @@
             margin-bottom: 20px;
             box-sizing: border-box;
             transition: border-color 0.3s ease;
-            width: 900px;
+            width: 100%; // Pleine largeur
             height: 200px;
 
             &::placeholder {
@@ -68,7 +72,6 @@
             &:focus {
                 outline: none;
                 border: 2px solid #fa7a78;
-
             }
         }
 
@@ -106,6 +109,52 @@
             align-self: center;
             justify-self: center;
             grid-area: button;
+        }
+    }
+}
+
+// Media queries pour les tablettes
+@media (min-width: 768px) {
+    .contact-form {
+        form {
+            grid-template-columns: 1fr 1fr; // Deux colonnes sur tablette
+            grid-template-areas:
+                "nom prénom"
+                "email gsm"
+                "message message"
+                "button button";
+        }
+    }
+}
+
+// Media queries pour les écrans de bureau
+@media (min-width: 992px) {
+    .contact-form {
+        h2 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1em;
+            margin-left: 250px;
+            margin-top: 100px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -30px;
+                width: 50%;
+                border-bottom: 4px solid white;
+            }
+        }
+
+        form {
+            width: 60%; // Réduit la largeur pour bureau
+            grid-template-columns: 1fr 1fr; // Deux colonnes sur bureau
+            grid-template-areas:
+                "nom prénom"
+                "email gsm"
+                "message message"
+                "button button";
         }
     }
 }

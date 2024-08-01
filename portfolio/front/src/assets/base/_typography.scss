@@ -1,35 +1,97 @@
 h1 {
-    font-size: 64px;
-    letter-spacing: 8px;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
 }
 
 h2 {
-    font-size: 32px;
-    letter-spacing: 8px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
 }
 
 h3 {
-    font-size: 32px;
-
+    font-size: 1.25rem;
 }
 
 a {
-    font-size: 25px;
-    letter-spacing: 8px;
+    font-size: 1.25rem;
+    letter-spacing: 0.5rem;
 }
-
 
 p,
 input,
 textarea {
-    font-size: 25px;
-    letter-spacing: 8px;
+    font-size: 1.25rem;
+    letter-spacing: 0.5rem;
 }
 
 .presentation-div-button,
 .contact-form {
     button {
-        font-size: 25px;
-        letter-spacing: 8px;
+        font-size: 1.25rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
+// Media queries pour les tablettes
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    p,
+    input,
+    textarea {
+        font-size: 1.5rem;
+    }
+
+    .presentation-div-button,
+    .contact-form {
+        button {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// Media queries pour les écrans de bureau
+@media (min-width: 992px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+
+    p,
+    input,
+    textarea {
+        font-size: 2rem;
+    }
+
+    .presentation-div-button,
+    .contact-form {
+        button {
+            font-size: 2rem;
+        }
     }
 }

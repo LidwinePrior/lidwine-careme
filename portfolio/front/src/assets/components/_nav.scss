@@ -1,8 +1,9 @@
-    nav,
-    .reseaux {
-        width: 800px;
+    nav {
+
+        width: 900px;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
         a {
             text-decoration: none;
@@ -12,12 +13,4 @@
                 color: #fa757b;
             }
         }
-    }
-
-    nav {
-        justify-content: space-between;
-    }
-
-    .reseaux {
-        justify-content: space-around;
     }

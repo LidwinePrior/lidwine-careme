@@ -17,19 +17,18 @@
         padding: 20px;
         box-shadow: 5px 5px #fa7a7894;
         border-radius: 10px;
-        height: 500px;
-        width: 500px;
-        max-width: 600px;
+        width: 90%;
+        max-width: 500px;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         position: relative;
 
-
         .close {
             color: #fa7a786a;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
             cursor: pointer;
             text-align: right;
@@ -46,7 +45,27 @@
 
         .succes-failed-text {
             text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+// Media Queries pour les tablettes
+@media (min-width: 768px) and (max-width: 991px) {
+    .modal {
+        .modal-content {
             width: 80%;
+            max-width: 600px;
+        }
+    }
+}
+
+// Media Queries pour les écrans de bureau (Desk)
+@media (min-width: 992px) {
+    .modal {
+        .modal-content {
+            width: 70%;
+            max-width: 700px;
         }
     }
 }

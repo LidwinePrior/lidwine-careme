@@ -11,6 +11,8 @@ body {
     width: 100%;
 }
 
+
+
 .home-page {
 
     header {
@@ -18,24 +20,57 @@ body {
     }
 
     main {
-        .presentation-section {
-            height: 85vh;
-        }
 
-        .projects-section {
-            height: 100vh;
-        }
-
-        .about-section {
-            height: 100vh;
-        }
-
+        .presentation-section,
+        .projects-section,
+        .about-section,
         .contact-form {
-            height: 85vh;
+            height: auto;
+            min-height: 60vh;
         }
     }
 
     footer {
         height: 15vh;
+    }
+}
+
+// Media queries pour les tablettes
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-page {
+        main {
+
+            .presentation-section,
+            .projects-section,
+            .about-section,
+            .contact-form {
+                height: auto;
+                min-height: 60vh;
+            }
+        }
+    }
+}
+
+// Media queries pour les écrans de bureau
+@media (min-width: 992px) {
+    .home-page {
+
+        main {
+            .presentation-section {
+                height: 85vh;
+            }
+
+            .projects-section {
+                height: 100vh;
+            }
+
+            .about-section {
+                height: 100vh;
+            }
+
+            .contact-form {
+                height: 85vh;
+            }
+        }
     }
 }

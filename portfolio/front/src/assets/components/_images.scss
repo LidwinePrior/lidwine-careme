@@ -1,14 +1,71 @@
+// Styles de base (Mobile-first)
+
 .image-ordi {
     img {
-        width: 1000px;
-        height: 1000px;
-
+        width: 100%;
+        height: auto;
     }
 }
 
 .image-me {
     img {
-        width: 400px;
+        width: 100%;
         height: auto;
+    }
+}
+
+// Media Queries pour les tablettes
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .image-ordi {
+        img {
+            width: 800px;
+            height: 800px;
+        }
+    }
+
+    .image-me {
+        img {
+            width: 300px;
+            height: auto;
+        }
+    }
+}
+
+// Media Queries pour les écrans de bureau (Desk)
+
+@media (min-width: 992px) {
+    .image-ordi {
+        img {
+            width: 1000px;
+            height: 1000px;
+        }
+    }
+
+    .image-me {
+        img {
+            width: 400px;
+            height: auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-ordi {
+    img {
+        width: 1000px;
+        height: 1000px;
+
     }
 }

@@ -3,42 +3,37 @@
     flex-direction: column;
     justify-content: space-between;
 
+
     h2 {
         position: relative;
         display: inline-block;
         margin-bottom: 1em;
-        margin-left: 250px;
+        margin-top: 4em;
+        margin-left: 50px;
 
         &::after {
             content: "";
             position: absolute;
             left: 0;
             bottom: -30px;
-            width: 5%;
+            width: 15%;
             border-bottom: 4px solid white;
         }
     }
 
+
     .projects {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
 
         .project-card {
-            height: 85vh;
+            height: 50vh;
             position: relative;
             overflow: hidden;
             cursor: pointer;
-
-            &:hover .overlay {
-                display: flex;
-                opacity: 1;
-            }
-
-            &:hover img {
-                filter: brightness(50%);
-            }
 
             .overlay {
                 position: absolute;
@@ -53,7 +48,7 @@
                 align-items: center;
                 text-align: center;
                 color: white;
-                opacity: 0;
+                opacity: 1; // Always visible on mobile and tablet
                 transition: opacity 0.3s ease;
             }
 
@@ -62,6 +57,70 @@
                     width: 100%;
                     height: 100%;
                     transition: filter 0.3s ease;
+                }
+            }
+
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .projects {
+            grid-template-columns: 1fr 1fr;
+
+            .project-card {
+                height: 60vh;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        h2 {
+            margin-top: 0;
+            margin-left: 250px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+
+
+            .project-card {
+                height: 85vh;
+
+
+                &:hover .overlay {
+                    display: flex;
+                    opacity: 1;
+                }
+
+                &:hover img {
+                    filter: brightness(50%);
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: white;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+
+                a {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: filter 0.3s ease;
+                    }
                 }
             }
         }

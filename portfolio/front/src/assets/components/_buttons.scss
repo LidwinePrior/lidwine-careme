@@ -1,8 +1,7 @@
 .language-buttons {
-
     button {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         background-color: transparent;
         color: white;
         cursor: pointer;
@@ -17,13 +16,12 @@
             box-shadow: inset 3px 3px 5px #d76c86;
             transform: scale(0.95);
         }
-
     }
 }
 
 .presentation-div-button {
-    width: 260px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
     background-color: transparent;
     cursor: pointer;
     border: 1px solid white;
@@ -39,7 +37,6 @@
 
     &:hover {
         border: 1px solid #fa7a78;
-
     }
 
     &:active {
@@ -50,8 +47,8 @@
 
 .contact-form {
     button {
-        width: 260px;
-        height: 60px;
+        width: 200px;
+        height: 50px;
         background-color: transparent;
         color: white;
         cursor: pointer;
@@ -60,12 +57,57 @@
 
         &:hover {
             border: 1px solid #fa7a78;
-
         }
 
         &:active {
             box-shadow: inset 3px 3px 5px #d76c86;
             transform: scale(0.95);
+        }
+    }
+}
+
+// Media Queries pour les tablettes
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .language-buttons {
+        button {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .presentation-div-button {
+        width: 220px;
+        height: 55px;
+    }
+
+    .contact-form {
+        button {
+            width: 220px;
+            height: 55px;
+        }
+    }
+}
+
+// Media Queries pour les écrans de bureau (Desk)
+
+@media (min-width: 992px) {
+    .language-buttons {
+        button {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .presentation-div-button {
+        width: 260px;
+        height: 60px;
+    }
+
+    .contact-form {
+        button {
+            width: 260px;
+            height: 60px;
         }
     }
 }

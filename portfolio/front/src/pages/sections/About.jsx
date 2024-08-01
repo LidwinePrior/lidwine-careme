@@ -27,15 +27,14 @@ const About = ({ language }) => {
             <h2><DynamicText textclass="about-title" language={language} /></h2>
             <div className="about-content">
                 <div className="about-paragraphs">
-                    <p><DynamicText textclass="about-text-intro" language={language} /></p>
+                    <p> {photos.length > 0 && (
+                        <img src={photos[2].url} alt={photos[2].description} />
+                    )}
+                        <DynamicText textclass="about-text-intro" language={language} /></p>
                     <p><DynamicText textclass="about-text-qualities" language={language} /></p>
                     <p><DynamicText textclass="about-text-route" language={language} /></p>
                 </div>
-                <div className="image-me">
-                    {photos.length > 0 && (
-                        <img src={photos[2].url} alt={photos[2].description} />
-                    )}
-                </div>
+
             </div>
         </section>
     );
