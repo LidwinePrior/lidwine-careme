@@ -1,11 +1,10 @@
 h1 {
     font-size: 2rem;
-    letter-spacing: 0.5rem;
 }
 
 h2 {
     font-size: 1.5rem;
-    letter-spacing: 0.5rem;
+
 }
 
 h3 {
@@ -14,21 +13,21 @@ h3 {
 
 a {
     font-size: 1.25rem;
-    letter-spacing: 0.5rem;
+
 }
 
 p,
 input,
 textarea {
     font-size: 1.25rem;
-    letter-spacing: 0.5rem;
+
 }
 
 .presentation-div-button,
 .contact-form {
     button {
         font-size: 1.25rem;
-        letter-spacing: 0.5rem;
+
     }
 }
 
@@ -54,6 +53,8 @@ textarea {
     input,
     textarea {
         font-size: 1.5rem;
+
+
     }
 
     .presentation-div-button,
@@ -68,10 +69,13 @@ textarea {
 @media (min-width: 992px) {
     h1 {
         font-size: 4rem;
+        letter-spacing: 0.3rem;
+
     }
 
     h2 {
         font-size: 2.5rem;
+        letter-spacing: 0.3rem;
     }
 
     h3 {
@@ -80,18 +84,21 @@ textarea {
 
     a {
         font-size: 2rem;
+        letter-spacing: 0.3rem;
     }
 
     p,
     input,
     textarea {
         font-size: 2rem;
+        letter-spacing: 0.3rem;
     }
 
     .presentation-div-button,
     .contact-form {
         button {
             font-size: 2rem;
+            letter-spacing: 0.3rem;
         }
     }
 }
